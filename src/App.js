@@ -81,7 +81,7 @@ class App extends Component {
       }).then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('https://radiant-gorge-51593.herokuapp.com:3001/image', {
+          fetch('https://radiant-gorge-51593.herokuapp.com/:3001/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
